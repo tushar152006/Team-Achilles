@@ -1,0 +1,126 @@
+Problem Statements
+Deep Learning Based Super Resolution Mapping (SRM) from Medium Resolution Satellite Imageries | SIH26142 | National Technical Research Organisation (NTRO)
+• Background
+Medium-resolution satellite imagery, typically ranging from 10 to 30 meters, is widely used in change detection, agriculture, land-cover mapping, disaster monitoring, and urban planning because it offers broad coverage and frequent revisit time. However, the spatial detail is often insufficient for fine-scale analysis, such as identifying small buildings, narrow roads, field boundaries, or localized damage assessment. This creates a need for advanced deep learning based generative enhancement techniques that can extract greater value from existing Earth observation data.
+
+• Description
+Medium-resolution satellite imagery, usually ranging from 10 to 30 meters, is widely used in remote sensing for agriculture monitoring, land-cover mapping, urban planning, disaster assessment, and environmental observation because it provides large-area coverage and frequent revisit capability. However, its spatial resolution is often not sufficient to clearly identify fine details such as narrow roads, small buildings, field boundaries, water edges, or localized damage. This limitation reduces the accuracy and confidence of interpretation and decision-making in applications that require detailed ground-level information. Generative AI super-resolution addresses this problem by using advanced models such as GANs, diffusion models, and deep neural networks to enhance medium-resolution satellite images into sharper and more information-rich finer outputs. These models learn spatial textures, patterns, edges, and spectral relationships from training data containing both medium-resolution and high-resolution image pairs. The goal is not simply to make the image visually clearer, but to reconstruct useful fine-scale details while preserving the original geographic and spectral consistency of the satellite data.
+
+The expected solution is a robust AI-based super-resolution framework that can take medium-resolution satellite imagery as input, perform pre-processing, apply a trained generative model, and produce an enhanced spatial resolution image, suitable for analysis. The system should improve feature visibility, support better classification, change detection, crop monitoring, urban mapping, and disaster response. At the same time, it must clearly manage uncertainty because some reconstructed details are inferred by the model and not directly observed. Therefore, validation against high-resolution reference data is essential to ensure that the enhanced outputs are scientifically reliable and useful for real-world remote sensing applications.
+
+• Expected Solution
+The expected solution is a robust super-resolution framework model based on the choice of participating team (Transformers/Generative/CNN etc.) that can transform the input medium-resolution satellite imagery (10m Sentinel-2 Satellite Imagery) into sharper, information-rich products (<4m) while preserving geospatial and spectral consistency. The solution should include pre-processing, model training with paired datasets, accuracy assessment, and validation against high-resolution references. Ideally, it should support applications such as crop monitoring, urban analysis, and disaster assessment. The final outcome should improve in-terms of interpretability and analytical utility, while clearly accounting for uncertainty and error components.
+
+Efficient systems for early detection,prevention,and management of livestock diseases and animal health issues | SIH26128 | Government Of Maharashtra
+• Problem Description
+Livestock owners, field veterinarians,para-veterinary workers and government departments often lack a unified, realtime mechanism to identify emerging animal-health risks at the village, block and district levels. Disease symptoms may be reported late, diagnostic facilities may be distant, vaccination and treatment histories may be incomplete, and information from farms, veterinary dispensaries, laboratories, vaccination drives and surveillance programmes may remain fragmented. These gaps can delay containment, increase livestock mortality and productivity loss, raise the risk of zoonotic transmission, and affect farmers’ incomes. The challenge is to create a practical system that enables early warning, rapid reporting, risk assessment, preventive action, referral and coordinated response, including in low-connectivity areas.
+
+• Expected Solution / Outcome
+A scalable animal-health surveillance and decision-support solution that can: capture symptom and mortality reports from farmers and field workers; use rulebased or AI-assisted triage to flag suspected outbreaks; integrate geospatial risk mapping, weather and historical disease trends; maintain animal-level or herd-level health,vaccination and treatment records; issue multilingual advisories and alerts; support sample collection, laboratory referral and case escalation; provide dashboards for veterinary officials; and operate through mobile, web, IVR or offline-enabled channels. Expected outcomes include reduced reporting time, earlier outbreak identification, improved vaccination coverage, faster treatment and containment, lower mortality and productivity loss, and stronger evidence-based planning.
+
+Sovereign On-Premise Agentic AI Workbench using Open-Weight Multimodal LLMs for Confidential Industrial Work | SIH26117 | Mangalore Refinery and Petrochemicals Limited (MRPL)
+• Background
+Refineries, PSUs, defence-linked manufacturing units and government offices generate a lot of routine but sensitive knowledge work. Approval notes, board presentations, engineering calculations, code for internal tools, review of scanned drawings and inspection reports. None of this can go through cloud AI assistants like Claude or Codex because the underlying data is confidential: Piping & Instrument Diagrams, financials, vendor negotiations, unreleased designs, internal correspondence, confidential business strategies etc. Company policy keeps this data on premises, so people either do the work manually resulting in productivity gain, or they quietly paste confidential material into public tools anyway. Open weight large reasoning models have reached a point where a genuinely useful assistant built on them is realistic. But nothing deployable exists today that industrial users can actually work with the way they use Claude or Codex.
+
+• Description
+The idea is a self-hosted, air gapped AI workbench running entirely on the organization's own GPU server. Nothing leaves the premises. The backend should not be locked to one model. It needs to support multiple open weight models at once and automatically pick the right one for a given task based on what that task needs, a coding request handled differently from a document summary request. New open weight models should be addable later without redesigning the system, since this space is moving fast.
+
+The assistant also needs to actually act like an agent. Plan out multi step work, call local tools such as file read and write, code execution in a sandbox, spreadsheet work, internal document search, and iterate on a task instead of answering once and stopping. It needs to handle more than text too: scanned PDFs, handwritten notes, engineering drawings, photographs, read through on device OCR and vision models. Output should be real deliverables, approval notes, PPT/Word/Excel files, working code, calculations with steps shown, not just chat replies. And it needs to ground itself in the organization's own manuals, SOPs and past correspondence through a local knowledge base connector, again with nothing going external.
+
+• Expected Solution
+A working local deployment, demonstrable on a single workstation or server with a mid range GPU (use a smaller open weight model if 120B class hardware isn't available at the venue), that shows model auto selection across at least two different task types. An agentic task carried through end to end, for example reading a scanned inspection report, pulling out key findings and drafting an approval note as a Word file. A coding task run and verified in a sandbox. A multimodal task involving image or scanned document understanding. The system should also show, through logs or a visible network monitor, that no external calls are made at any point. That's the actual proof of the sovereign claim, not just a statement of it.
+
+Smart Al-Enabled Rapid Feed and Silage Quality Testing System for Dairy Farmers | SIH26111 | Ministry of Fisheries, Animal Husbandry & Dairying
+• Background
+Animal nutrition directly affects milk production, animal health, reproductive performance, and dairy profitability. Dairy farmers often face challenges due to poor-quality cattle feed,adulterated feed ingredients, fungal contamination, toxin presence, and low-quality silage.Conventional feed testing laboratories are expensive and inaccessible for many rural farmers.There is a need for rapid, portable, affordable, and digitally enabled feed quality assessment systems.Emerging technologies such as Al, loT, spectroscopy, computer vision, and biosensors can help create real-time feed testing and advisory systems for dairy farmers.
+
+• Description
+Participants are required to develop a rapid digital testing solution capable of:
+• Assessing nutritional quality of cattle feed and silage;
+• Detecting adulteration and contamination;
+• Providing instant farmer advisories and feed recommendations;
+• Monitoring feed storage and silage conditions.
+
+The solution may include:
+• Portable testing devices;
+• Smartphone-enabled feed analysis;
+• Al-powered nutritional prediction;
+• Cloud dashboards;
+• QR-based authenticity systems.
+
+The system may detect:
+• Crude protein
+• Moisture
+• Fiber
+• Energy value
+• Mineral deficiencies
+• Urea adulteration
+• Sand/silica contamination
+• Aflatoxins and mycotoxins
+• Fungal contamination Silage monitoring may include:
+• pH
+• Fermentation quality
+• Moisture
+• Spoilage indicators
+• Mould growth
+
+• Expected Solution
+The expected solution should:
+• Provide testing results within minutes;
+• Be low-cost and portable;
+• Support multilingual farmer interfaces;
+• Work offline in rural areas;
+• Generate nutritional and storage advisories;
+• Enable cloud-based monitoring and traceability.
+
+• Expected technologies
+• AI/ML
+• loT sensors
+• NIR spectroscopy
+• Mobile applications
+• Computer vision
+• Cloud analytics
+• Predictive advisory systems
+
+Gen AI Platform for Automated Content Transformation | SIH26154 | National Technical Research Organisation (NTRO)
+• Background
+Organisations frequently need to convert information available in different forms such as news articles, reports, advisories, threat intelligence, policy documents, research papers, announcements, incident reports or free-form prompts into specific communication artefacts suitable for various purposes. The process of manually analysing the source content, understanding the desired objective and creating the required output format is time-consuming, resource-intensive and often requires expertise in content creation, communication and domain knowledge.
+
+There is a need for an intelligent platform that can transform user-provided content into a desired output format through a simple and configurable interface.
+
+• Description
+The system shall act as an AI-powered content transformation engine that converts a common source of information into the specific deliverable requested by the operator, thereby reducing manual effort, improving consistency, accelerating content creation and enhancing operational efficiency.
+
+The platform shall provide a dashboard through which an operator can submit source content in the form of high quality English language text, documents, articles, reports, prompts, images, videos or contextual information. In addition to providing the source content, the operator shall select one or more desired output types through configurable parameters available on the dashboard.
+
+Based on the submitted content and the selected output type(s), the platform shall analyze the input, understand the context and intent, and generate the requested output artefact. The platform should support multiple output formats and allow operators to control generation parameters such as target audience, tone, language, level of detail, communication objective and content style.
+
+In summary, platform shall generate output corresponding to the option(s) selected by the operator on the dashboard.
+
+• Examples include
+• If 'Video' is selected, generate a complete video package including script, storyboard, scene descriptions, narration text, subtitles and visual recommendations.
+• If 'LinkedIn Post' is selected, generate a professional LinkedIn post suitable for publication.
+• If 'Twitter/X Post' is selected, generate platform-optimized tweets or tweet threads.
+• If 'Advisory' is selected, generate a structured advisory document.
+• If 'Infographic' is selected, generate infographic content, layout recommendations and key messaging.
+• If 'Executive Summary' is selected, generate a concise executive briefing.
+• If 'Presentation' is selected, generate presentation slides and speaker notes.
+• If multiple output formats are selected, generate all selected deliverables from the same source content.
+
+• Expected Solution/Deliverables for Evaluation
+• Source Code Link (GitHub/Drive Link)
+• Readme with Setup Instructions
+• Architecture Document (Max 2 Pages)
+• Demo Video (Max 2 Minutes)
+• Technical Presentation (Max 5 Slides)
+
+Extreme Heatwave Early Warning and Human Thermal Stress Index | SIH26083 | Ministry of Earth Sciences (MoES)
+In recent years, the frequency, duration, and intensity of heatwaves across India have escalated sharply due to climate change. However, traditional meteorological warnings rely almost exclusively on ambient dry-bulb temperature thresholds. This creates a critical vulnerability:standard forecasts ignore the deadly compounding effects of relative humidity, wind speed, and solar radiation on the human body.
+
+A temperature of 40°C at 20% humidity feels vastly different from 40°C at 70% humidity—the latter can be fatal. Current public health infrastructure lacks localized, impact-based forecasting that translates raw weather data into actual physiological risk, human thermal stress levels, and projected mortality rates.
+
+The challenge is to design an intelligent, localized early warning system that shifts heatwave forecasting from 'what the weather will be' to 'what the weather will do' to human health.
+
+Participants need to build a predictive platform that computes a comprehensive Human Thermal Stress Index (integrating temperature, humidity, wind, and radiation) and links it directly to an automated Mortality Risk Index. The system should offer high-resolution forecasts to help municipal corporations, healthcare systems, and disaster management authorities deploy targeted,preemptive interventions.
+
+Develop algorithms to calculate advanced heat stress metrics such as the Wet-Bulb Globe Temperature (WBGT), Universal Thermal Climate Index (UTCI), or Heat Index (HI) rather than relying on temperature alone. Integrate historical public health, demographic (e.g., elderly or outdoor worker density), and localized weather data to predict heat-induced mortality and hospitalization spikes 3 to 5 days in advance. A dynamic GIS-mapped dashboard providing colorcoded, hyper-local alerts (Zone/Ward level) paired with actionable, automated public health advisories. An API capable of pushing automated SMS/WhatsApp regional alerts or localized triggers for city administration to initiate heat action plans (e.g., opening cooling centers, adjusting power grids, shifting outdoor work hours).

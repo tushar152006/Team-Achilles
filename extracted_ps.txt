@@ -1,0 +1,316 @@
+================================================================================
+PS 26038
+Explainable AI for Diabetic Retinopathy Screening in Rural India
+ORGANIZATION MathWorks
+DEPARTMENT MathWorks
+CATEGORY Software
+THEME Clean &amp; Green Technology
+YOUTUBE LINK -
+DATASET LINK APTOS 2019 Blindness Detection: https://www.kaggle.com/c/aptos2019-
+blindness-detection IDRiD (Indian Diabetic Retinopathy Image Dataset):
+https://ieeedataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid DRIVE
+(Vessel Extraction): https://drive.grand-challenge.org/ Messidor-2:
+https://www.adcis.net/en/third-party/messidor2/
+Complete Problem Statement
+Background: India has over 77 million diabetic adults - the second highest globally. Diabetic Retinopathy (DR)
+affects ~18% of this population and is a leading cause of preventable blindness. Early screening can
+prevent90% of vision loss, but India has only ~1 ophthalmologist per 100,000 rural population, making mass
+manual screening infeasible. Existing AI solutions function as black boxes, lack clinical validation rigor, and fail
+with variable image quality from portable fundus cameras in field conditions. A robust, explainable, and
+validated screening system is essential for deployment in primary healthcare centres across rural India.
+Description: Design a MATLAB-based retinal image analysis pipeline for automated DR screening addressing
+real-world deployment challenges: 1. Image Quality Assessment and Enhancement: Automatically evaluate
+fundus images for adequacy (focus, illumination, field of view). Apply adaptive enhancement (CLAHE,
+illumination normalization, denoising) for borderline images; reject ungradeable ones with recapture feedback.
+2. Retinal Structure Segmentation: Extract clinically relevant structures - optic disc/fovea localization, vessel
+segmentation, microaneurysm detection, exudate segmentation, hemorrhage classification, and
+neovascularization detection. 3. DR Severity Grading: Classify using the International Clinical DR severity
+scale (Levels 0-4, from no DR to proliferative DR)
+
+================================================================================
+PS 26046
+AIIA Clinical Trials Dashboard - a real-time, cloud-based,
+GCP-compliant Clinical Trial Management System (CTMS) for
+Ayurveda research, with CDISC/FHIR-interoperable data,
+role-based KPIs, and integrated ethics, regulatory (CTRI / NDCT
+Rules 2019) and pharmacovigilance tracking.
+ORGANIZATION Ministry of Ayush
+DEPARTMENT All India Institute of Ayurveda
+CATEGORY Software
+THEME Space Technology
+YOUTUBE LINK -
+DATASET LINK Clinical-trial data is sensitive personal data, so development should use synthetic /
+de-identified datasets; representative standards and public sources:&lt;br&gt;&lt;br&gt; (cid:127)
+Clinical Trials Registry â€“ India (public trial records) â€” ctri.nic.in&lt;br&gt; (cid:127) CDISC
+standards &amp; controlled terminology (CDASH, SDTM, ADaM, Define-XML) â€”
+cdisc.org&lt;br&gt;
+Complete Problem Statement
+Background: The All India Institute of Ayurveda (AIIA) conducts and coordinates a growing portfolio of clinical
+research in Ayurveda â€” interventional and observational studies, multi-centre trials â€” and, as the host of
+the National Pharmacovigilance Coordination Centre (NPvCC) for ASU&amp;H drugs, it also anchors
+nationwide safety surveillance. This activity is governed by a demanding compliance framework: mandatory
+prospective registration in the Clinical Trials Registry â€“ India (CTRI); the Good Clinical Practice guidelines
+for ASU medicine (GCP-ASU) and the ICMR National Ethical Guidelines; the New Drugs and Clinical Trials
+Rules, 2019 where applicable; Institutional Ethics Committee oversight; and timely Adverse-Event /
+Serious-Adverse-Event reporting. Yet study status, recruitment, milestones, data quality and safety signals are
+typically tracked across spreadsheets and disconnected tools, with no single, real-time, auditable view. The
+result is delayed decisions, missed reporting timelines and avoidable compliance risk â€” precisely as
+Ayurveda research scales and seeks global scientific credibility. Description: The platform is a r
+
+================================================================================
+PS 26047
+Patient Case-Taking Software
+ORGANIZATION Ministry of Ayush
+DEPARTMENT All India Institute of Ayurveda
+CATEGORY Software
+THEME Smart Automation
+YOUTUBE LINK -
+DATASET LINK -
+Complete Problem Statement
+Background: 1.1 The Clinical History-Taking Bottleneck in Indian Hospitals History taking â€” the structured
+elicitation of a patient's presenting complaints, history of present illness, past medical and surgical history,
+drug and allergy history, family and personal history, and a review of systems â€” is the single most important
+diagnostic activity in clinical medicine. Classical teaching holds that a well-conducted history yields the correct
+diagnosis in 70â€“80% of cases, even before examination or investigation. Yet in India's overburdened public
+hospital outpatient departments (OPDs), the time available for this critical interaction has collapsed to
+unsustainable levels. India operates one of the most patient-dense healthcare systems in the world. Tertiary
+government hospitals and apex institutions routinely register 4,000â€“10,000 OPD patients per day, with a
+doctor-to-patient consultation time frequently reported between 2 and 5 minutes â€” among the shortest
+globally (study published in BMJ Open, 2017, across 67 countries placed India's average primary-care
+consultation at just over 2 minutes). Within this window, the physician must simultaneously elicit history,
+examine the patient, review prior records, formulate a diagnosis, counsel, and prescribe. The result is
+systematic under-elicitation of history, missed comorbidities, repeated questioning across visits, and
+diagnostic error. AYUSH institutions face an additional layer of complexity. Ayurvedic history taking (Trividha,
+Ashtavidha, and Dashavidha Pariksha) requires detailed assessment of Prakriti (constitution), Vikriti (current
+imbalance), Agni (digestive capacity), Koshtha (bowel nature), Ahara-Vihara (diet and lifestyle), Nidana
+(causative factors), and Samprapti (pathogenesis) â€” a far mo
+
+================================================================================
+PS 26094
+AI-Powered Dynamic Mental Health Monitoring and Distress
+Prediction System for Victims of Atrocities
+ORGANIZATION Ministry of Social Justice and Empowerment (MoSJE)
+DEPARTMENT Department of Social Justice and Empowerment
+CATEGORY Software
+THEME MedTech / BioTech / HealthTech
+YOUTUBE LINK -
+DATASET LINK -
+Complete Problem Statement
+(cid:127) Background Victims of atrocities frequently experience prolonged psychological distress after complaint
+registration due to threats, intimidation, repeated court appearances, delays in investigation and trial, social
+ostracism, economic hardship, and rehabilitation challenges.Existing mechanisms focus primarily on legal
+and financial support and do not provide continuous monitoring of victim well-being.
+(cid:127) Problem Statement Develop an AI-based Dynamic Mental Health Monitoring and Distress Prediction System
+that continuously monitors and predicts psychological distress among victims and complainants registered
+through NHAA (14566), the Integrated Portal, chatbot, mobile application, IVRS, or other approved
+communication channels throughout the investigation,trial, rehabilitation, and compensation process.
+(cid:127) Expected Solution The system should:
+(cid:127) Conduct periodic interactions with victims through chatbot, IVRS calls, SMS, mobile applications, web portal,
+or helpline follow-up mechanisms.
+(cid:127) Analyse voice, text, behavioural responses, and engagement patterns using NLP, Sentiment Analysis, and
+Emotion AI.
+(cid:127) Generate a Dynamic Distress Score and longitudinal trend analysis.
+(cid:127) Predict escalation of psychological distress before a crisis situation emerges.
+(cid:127) Trigger alerts to counsellors, district authorities, and designated officials when predefined risk thresholds are
+crossed.
+(cid:127) Recommend appropriate interventions such as counselling, medical treatment, witness protection, relocation
+support, financial assistance, legal aid, or rehabilitation measures.
+(cid:127) Pr
+
+================================================================================
+PS 26111
+Smart Al-Enabled Rapid Feed and Silage Quality Testing
+System for Dairy Farmers
+ORGANIZATION Ministry of Fisheries, Animal Husbandry &amp; Dairying
+DEPARTMENT Department of Animal Husbandry &amp; Dairying
+CATEGORY Software
+THEME Agriculture, FoodTech &amp; Rural Development
+YOUTUBE LINK -
+DATASET LINK -
+Complete Problem Statement
+(cid:127) Background Animal nutrition directly affects milk production, animal health, reproductive performance, and
+dairy profitability. Dairy farmers often face challenges due to poor-quality cattle feed,adulterated feed
+ingredients, fungal contamination, toxin presence, and low-quality silage.Conventional feed testing
+laboratories are expensive and inaccessible for many rural farmers.There is a need for rapid, portable,
+affordable, and digitally enabled feed quality assessment systems.Emerging technologies such as Al, loT,
+spectroscopy, computer vision, and biosensors can help create real-time feed testing and advisory systems
+for dairy farmers.
+(cid:127) Description Participants are required to develop a rapid digital testing solution capable of:
+(cid:127) Assessing nutritional quality of cattle feed and silage;
+(cid:127) Detecting adulteration and contamination;
+(cid:127) Providing instant farmer advisories and feed recommendations;
+(cid:127) Monitoring feed storage and silage conditions. The solution may include:
+(cid:127) Portable testing devices;
+(cid:127) Smartphone-enabled feed analysis;
+(cid:127) Al-powered nutritional prediction;
+(cid:127) Cloud dashboards;
+(cid:127) QR-based authenticity systems. The system may detect:
+(cid:127) Crude protein
+(cid:127) Moisture
+(cid:127) Fiber
+(cid:127) Energy value
+(cid:127) Mineral deficiencies
+(cid:127) Urea adulteration
+(cid:127) Sand/silica contamination
+(cid:127) Aflatoxins and mycotoxins
+(cid:127) Fungal contamination Silage monitoring may include:
+(cid:127) pH
+(cid:127) Fermentation quality
+SIH 2026 - Software & Hardware Problem Statements Page 144
+PAGEBREAK
+(cid:127) Moisture
+
+
+================================================================================
+PS 26128
+Efficient systems for early detection,prevention,and
+management of livestock diseases and animal health issues
+ORGANIZATION Government Of Maharashtra
+DEPARTMENT Maharashtra State Innovation Society, Department of Skills, Employment, Entrepreneurship
+and Innovation
+CATEGORY Software
+THEME Agriculture, FoodTech &amp; Rural Development
+YOUTUBE LINK -
+DATASET LINK -
+Complete Problem Statement
+(cid:127) Problem Description Livestock owners, field veterinarians,para-veterinary workers and government
+departments often lack a unified, realtime mechanism to identify emerging animal-health risks at the village,
+block and district levels. Disease symptoms may be reported late, diagnostic facilities may be distant,
+vaccination and treatment histories may be incomplete, and information from farms, veterinary dispensaries,
+laboratories, vaccination drives and surveillance programmes may remain fragmented. These gaps can
+delay containment, increase livestock mortality and productivity loss, raise the risk of zoonotic transmission,
+and affect farmersâ€™ incomes. The challenge is to create a practical system that enables early warning,
+rapid reporting, risk assessment, preventive action, referral and coordinated response, including in
+low-connectivity areas.
+(cid:127) Expected Solution / Outcome A scalable animal-health surveillance and decision-support solution that can:
+capture symptom and mortality reports from farmers and field workers; use rulebased or AI-assisted triage to
+flag suspected outbreaks; integrate geospatial risk mapping, weather and historical disease trends; maintain
+animal-level or herd-level health,vaccination and treatment records; issue multilingual advisories and alerts;
+support sample collection, laboratory referral and case escalation; provide dashboards for veterinary
+officials; and operate through mobile, web, IVR or offline-enabled channels. Expected outcomes include
+reduced reporting time, earlier outbreak identification, improved vaccination c
+
+================================================================================
+PS 26131
+Early detection and management of crop diseases and pest
+infestations
+ORGANIZATION Government Of Maharashtra
+DEPARTMENT Maharashtra State Innovation Society, Department of Skills, Employment, Entrepreneurship
+and Innovation
+CATEGORY Software
+THEME Agriculture, FoodTech &amp; Rural Development
+YOUTUBE LINK -
+DATASET LINK -
+Complete Problem Statement
+(cid:127) Problem Description Farmers often recognise crop diseases or pest infestations only after visible damage
+has spread. Extension staff may cover large areas, while laboratory diagnosis and expert advice may not be
+immediately available. Weather, crop stage, variety, soil condition and local pest history influence risk, but
+these inputs are rarely combined into actionable farm-level alerts. Incorrect diagnosis may lead to delayed
+treatment, excessive or inappropriate pesticide use, increased cultivation cost,residue concerns and yield
+loss. The challenge is to provide timely, reliable and locally relevant detection,forecasting and management
+support.
+(cid:127) Expected Solution / Outcome A farmer- and extension-worker-friendly crop-health system that supports
+image based symptom identification, pest-trap or sensor inputs, weather-based risk forecasting, geospatial
+hotspot mapping,expert validation and multilingual advisories. The system should recommend integrated
+pest and disease management actions, safe input usage,referral to extension or laboratories, and follow-up
+monitoring. It should learn from field confirmations and provide dashboards for agriculture officials.Expected
+outcomes include earlier detection, reduced crop loss, more targeted pesticide use, faster extension
+response, improved surveillance coverage and better planning of preventive interventions.
+SIH 2026 - Software & Hardware Problem Statements Page 170
+PAGEBREAK
+PS 26132
+Strengthening market linkages and price discovery for farmers
+ORGANIZATION Government Of Maharashtra
+DEPARTMENT Maharashtra State Innovation Society, Department of Ski
+
+================================================================================
+PS 26133
+Accessibility and quality of public healthcare
+services,particularly in rural and underserved areas
+ORGANIZATION Government Of Maharashtra
+DEPARTMENT Maharashtra State Innovation Society, Department of Skills, Employment, Entrepreneurship
+and Innovation
+CATEGORY Software
+THEME MedTech / BioTech / HealthTech
+YOUTUBE LINK -
+DATASET LINK -
+Complete Problem Statement
+(cid:127) Problem Description Rural and underserved communities may face long travel distances,shortages of
+specialists, irregular diagnostics, fragmented medical records, delayed referrals and limited awareness of
+available services. Primary health facilities may have constrained staff and equipment, while patients may
+move between sub-centres, primary health centres, rural hospitals and district hospitals without continuity of
+information. Connectivity, language,health literacy and affordability further affect access. The challenge is to
+improve timely access, continuity, quality and accountability while strengtheningâ€”not replacingâ€”the
+public-health system.
+(cid:127) Expected Solution / Outcome An integrated care-access and quality support solution that may combine
+assisted teleconsultation, appointment and queue management, digital triage,longitudinal patient records,
+referral tracking, diagnostic coordination,medicine availability, high-risk patient follow-up and facility
+dashboards. It should support frontline health workers, low-connectivity environments,multilingual
+interaction, emergency escalation and interoperable health records based on approved standards.Expected
+outcomes include reduced travel and waiting time, earlier consultation, improved referral completion, better
+follow-up for maternal, child and chronic conditions,improved medicine/diagnostic availability visibility and
+enhanced quality monitoring.
+SIH 2026 - Software & Hardware Problem Statements Page 172
+PAGEBREAK
+PS 26134
+Challenges in aligning skill development programs with
+industry requirements and emerging job market 
+
+================================================================================
+PS 26139
+Hybrid Quantum Machine Learning Platform for Early Disease
+Detection
+ORGANIZATION Egreen Quanta
+DEPARTMENT Egreen Quanta
+CATEGORY Software
+THEME MedTech / BioTech / HealthTech
+YOUTUBE LINK -
+DATASET LINK Public/Open
+Complete Problem Statement
+Background Early and accurate detection of diseases significantly improves treatment outcomes and reduces
+healthcare costs. Classical machine learning models have achieved notable success in medical diagnosis;
+however, they often face limitations when dealing with high-dimensional, noisy, and complex biomedical data
+(e.g., genomics, medical imaging, and electronic health records). Quantum machine learning (QML) offers the
+potential to capture intricate patterns through quantum superposition and entanglement. Due to current
+hardware constraints, a hybrid quantum-classical approach provides a practical pathway to leverage quantum
+advantages while remaining executable on existing quantum simulators and near-term quantum devices.
+Description This problem focuses on designing and developing a hybrid quantum machine learning platform
+for early disease detection. The platform will integrate classical pre-processing and feature engineering with
+quantum-enhanced learning models (such as quantum support vector machines, quantum neural networks, or
+variational quantum classifiers). It will be applied to biomedical datasets for the early identification of diseases
+(e.g., cancer, cardiovascular disorders, or neurological conditions). The system should support data ingestion,
+hybrid model training, prediction, explainability, and performance evaluation against purely classical baselines.
+Objectives
+(cid:127) Design a hybrid quantum-classical machine learning architecture suitable for early disease detection.
+(cid:127) Develop quantum-enhanced classification/regression models that can process high-dimensional biomedical
+data.
+(cid:127) Improve detection accuracy, sensitivity, and specificity compared with classical machine learning b
+
+================================================================================
+PS 26186
+AI-Based Predictive Personnel Stress and Welfare Monitoring
+System for Uniformed Forces
+ORGANIZATION Ministry of Home Affairs
+DEPARTMENT Central Reserve Police Force (CRPF), Police II Division
+CATEGORY Software
+THEME MedTech / BioTech / HealthTech
+YOUTUBE LINK -
+DATASET LINK Anonymized HR datasets, deployment records, leave history, wellness survey data,
+workload data, and simulated behavioral datasets.
+Complete Problem Statement
+(cid:127) Background Personnel serving in Central Armed Police Forces (CAPFs), Armed Forces, and other
+uniformed services operate under physically demanding, psychologically stressful, and often hazardous
+conditions.Extended deployments, operational pressures, separation from families,irregular working hours,
+and exposure to traumatic incidents can significantly impact mental well-being.Currently, stress identification
+largely depends on manual observation and self-reporting, which may delay timely intervention. There is a
+need for a proactive, technology-driven solution that can identify early indicators of stress, burnout, and
+psychological distress while maintaining privacy and organizational trust.
+(cid:127) Description The proposed solution aims to develop an AI-powered Personnel Stress and Welfare Monitoring
+System capable of identifying potential indicators of stress, burnout, emotional fatigue, and welfare concerns
+through analysis of organizational and voluntarily provided wellness data.The system should:
+(cid:127) Analyze HR-related indicators such as leave patterns,deployment history, duty schedules, transfer
+frequency, training commitments, and workload trends.
+(cid:127) Support optional self-reporting and wellness assessments through a secure mobile application.
+(cid:127) Incorporate voluntary biometric and wellness data, where authorized and legally permissible.
+(cid:127) Detect behavioral patterns associated with elevated stress risk.
+(cid:127) Generate risk assessments and welfare recommendations for authorized welf
