@@ -2,148 +2,149 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* --- Figma Modern Light Palette Tokens --- */
+  --bg-canvas: #F8FAFC;              /* Luminous Slate 50 canvas */
+  --bg-base: #FFFFFF;                /* Crisp white card surface */
+  --bg-surface-subtle: #F1F5F9;      /* Slate 100 for pills/inputs */
+  --bg-hover: #F8FAFC;
+  --bg-active: #E2E8F0;
+  --bg-elevated: #FFFFFF;
+
+  /* --- Borders & Dividers --- */
+  --border-subtle: #E2E8F0;          /* Clean slate 200 hairline border */
+  --border-default: #CBD5E1;         /* Slate 300 */
+  --border-strong: #94A3B8;          /* Slate 400 */
+
+  /* --- Typography --- */
+  --text-primary: #0F172A;           /* Obsidian Slate 900 for sharp headings */
+  --text-secondary: #334155;         /* Slate 700 for legible body copy */
+  --text-tertiary: #64748B;          /* Slate 500 for metadata & captions */
+  --text-disabled: #94A3B8;          /* Slate 400 */
+  --text-link: #2563EB;              /* Electric Royal Blue */
+
+  /* --- Semantic Status Colors (Figma Curated) --- */
+  --accent-primary: #2563EB;         /* Modern Electric Blue */
+  --accent-primary-hover: #1D4ED8;
+  --accent-subtle: #EFF6FF;
+
+  --semantic-success: #059669;       /* Emerald */
+  --semantic-warning: #D97706;       /* Warm Amber */
+  --semantic-danger: #E11D48;        /* Vivid Rose / Crimson (Alert) */
+  --semantic-info: #0284C7;          /* Sky Blue */
+
+  /* --- Atmospheric Gradients --- */
+  --grad-sunny: linear-gradient(135deg, rgba(254, 243, 199, 0.6) 0%, rgba(224, 242, 254, 0.6) 50%, rgba(255, 255, 255, 0.9) 100%);
+  --grad-cloudy: linear-gradient(135deg, rgba(241, 245, 249, 0.8) 0%, rgba(226, 232, 240, 0.6) 100%);
+  --grad-rainy: linear-gradient(135deg, rgba(224, 242, 254, 0.8) 0%, rgba(186, 230, 253, 0.5) 100%);
+  --grad-thermometer: linear-gradient(90deg, #38BDF8 0%, #FBBF24 45%, #F97316 75%, #E11D48 100%);
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Segoe UI", Inter, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #090d16;
-  color-scheme: dark;
+  font-family: 'Inter', 'Segoe UI Variable', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   min-width: 320px;
-  background: #090d16;
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  overflow-x: hidden;
 }
 
-button,
-select,
-input {
-  font: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-/* Atmospheric weather backdrop */
-.weather-backdrop {
-  pointer-events: none;
+/* Atmospheric Ambient Background Glow */
+.atmospheric-mesh {
   position: fixed;
   inset: 0;
-  background: 
-    radial-gradient(ellipse 90% 50% at 50% -10%, rgba(30, 58, 138, 0.35), transparent 70%),
-    radial-gradient(ellipse 60% 40% at 90% 20%, rgba(225, 29, 72, 0.12), transparent 60%),
-    radial-gradient(ellipse 50% 50% at 10% 40%, rgba(2, 132, 199, 0.1), transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 40% at 50% -10%, rgba(59, 130, 246, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 30% at 85% 15%, rgba(245, 158, 11, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 30% at 15% 20%, rgba(14, 165, 233, 0.05) 0%, transparent 50%);
 }
 
-/* MSN-style Card */
-.msn-card {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 1rem;
-  background: #121a2d;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4), 0 2px 6px -1px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+/* Figma Card Style */
+.figma-card {
+  background-color: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 8px 20px -6px rgba(15, 23, 42, 0.04);
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 200ms ease, border-color 200ms ease;
 }
 
-.msn-card:hover {
-  border-color: rgba(255, 255, 255, 0.14);
+.figma-card:hover {
+  border-color: var(--border-default);
+  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
 }
 
-/* Horizontal scroll styling */
-.horizontal-scroll {
+/* Horizontal Snap Carousel */
+.hourly-scroller {
   display: flex;
+  gap: 12px;
   overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
-.horizontal-scroll::-webkit-scrollbar {
-  height: 6px;
+.hourly-scroller::-webkit-scrollbar {
+  display: none;
 }
 
-.horizontal-scroll::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.18);
-  border-radius: 9999px;
+.hourly-card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  min-width: 76px;
+  background-color: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+  transition: all 180ms ease;
 }
 
-/* MSN Temperature Range Bar */
-.temp-range-bar {
-  height: 6px;
-  border-radius: 9999px;
-  background: linear-gradient(90deg, #38bdf8, #facc15, #f97316, #ef4444);
+.hourly-card:hover {
+  border-color: var(--border-default);
+  box-shadow: 0 6px 16px -2px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
 }
 
-/* Modern Slider */
-.tap-slider {
-  width: 100%;
-  height: 0.3rem;
-  appearance: none;
-  border-radius: 9999px;
-  outline: none;
-  background: #1e293b;
+/* Accessibility Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
 }
 
-.tap-slider::-webkit-slider-thumb {
-  width: 1.1rem;
-  height: 1.1rem;
-  appearance: none;
-  border: 2px solid #ffffff;
-  border-radius: 9999px;
-  background: #0078d4;
-  cursor: grab;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  transition: transform 120ms ease;
-}
-
-.tap-slider::-webkit-slider-thumb:hover {
-  transform: scale(1.2);
-}
-
-.tap-slider::-moz-range-thumb {
-  width: 1.1rem;
-  height: 1.1rem;
-  border: 2px solid #ffffff;
-  border-radius: 9999px;
-  background: #0078d4;
-  cursor: grab;
-}
-
-/* Leaflet container */
+/* Leaflet Container in Figma Light Mode */
 .leaflet-container {
   font-family: inherit;
-  background: #090d16;
-  border-radius: 0.75rem;
+  background: #F1F5F9;
+  border-radius: 16px;
 }
 
 .leaflet-control-attribution,
 .leaflet-control-zoom a {
-  background: rgba(18, 26, 45, 0.9) !important;
-  color: #94a3b8 !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
-  border-radius: 6px !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: #334155 !important;
+  border-color: #E2E8F0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.06) !important;
 }
 
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
-  background: #121a2d;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+  background: #FFFFFF;
+  color: #0F172A;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 12px 30px -6px rgba(15, 23, 42, 0.12);
   border-radius: 12px;
 }
-
-.leaflet-popup-content {
-  margin: 0.85rem 1rem;
-}
-
-.leaflet-popup-content p {
-  margin: 0.2rem 0;
-  color: #94a3b8;
-  font-size: 12px;
-}
-
